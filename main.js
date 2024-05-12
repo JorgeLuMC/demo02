@@ -61,3 +61,11 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+document.getElementById('nextPage').addEventListener('click', function () {
+  swiper.slideNext();
+});
+
+document.getElementById('prevPage').addEventListener('click', function () {
+  swiper.slidePrev();
+});

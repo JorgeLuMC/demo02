@@ -99,11 +99,9 @@ body {
 }
 
 header {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.8)
-    ),
+      rgba(0, 0, 0, 0.8)),
     url("assets/header.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -268,11 +266,9 @@ nav {
 }
 
 .banner {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+      rgba(0, 0, 0, 0.6)),
     url("assets/banner.jpg");
   background-position: center center;
   background-size: cover;
@@ -314,7 +310,7 @@ nav {
   border-radius: 5px;
 }
 
-.blog__card > div {
+.blog__card>div {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -343,11 +339,9 @@ nav {
 }
 
 .subscribe {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+      rgba(0, 0, 0, 0.6)),
     url("assets/subscribe.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -394,9 +388,39 @@ nav {
   background-color: var(--secondary-color-light);
 }
 
+.customer__container {
+  position: relative;
+}
+
+.btn__swiper {
+  width: 95%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+#prevPage,
+#nextPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prevPage {
+  bottom: 50px;
+}
+
+
+
 .customer__container .para {
   margin-block: 1rem 4rem;
   color: var(--text-light);
+}
+
+.btn__swiper__icon {
+  width: 16px;
+  height: 16px;
 }
 
 .swiper {
